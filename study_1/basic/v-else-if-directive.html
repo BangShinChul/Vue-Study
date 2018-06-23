@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>v-else-directive study</title>
+	<script src="https://unpkg.com/vue"></script>
+</head>
+<body>
+	<div id="app">
+		<h1 v-if="value > 5">쨔잔!</h1>
+		<h1 v-else-if="value === 5">아직 값이 5에요</h1>
+		<h1 v-else>시무룩..</h1>
+	</div>
+	<script>
+		var app = new Vue({
+			el: '#app',
+			data: {
+				value: 0
+			}
+		})
+	</script>
+</body>
+</html>
+<!--
+1. 해당 html 파일을 크롬으로 실행해보세요.
+2. 크롬 콘솔창에 app.value = 5 을 입력해보세요.
+3. 크롬 콘솔창에 app.value = 6 을 입력해보세요.
+4. 크롬 콘솔상에 app.value = 0 을 입력해보세요.
+-->

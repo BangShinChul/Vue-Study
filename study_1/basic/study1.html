@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Study1</title>
+	<script src="https://unpkg.com/vue"></script> <!-- Include the Vue library -->
+</head>
+<body>
+<div id="app">
+	<h2>{{ product }} is in stock.</h2>
+</div>
+<script>
+	const app = new Vue({ //create a Vue instance
+		el: '#app', // Plug into root element
+		data: {
+			product: 'Boots' // Move data inside an object
+		}
+	})
+</script>
+<!-- 
+1. 해당 html 파일을 크롬으로 실행해보세요.
+2. 크롬 콘솔창에 app.product = 'Socks' 를 입력해보세요.
+-->
+</body>
+</html>

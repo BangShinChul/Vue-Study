@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>v-html-directive study</title>
+	<script src="https://unpkg.com/vue"></script>
+</head>
+<body>
+	<div id="app">
+		<h1>Hello
+			<span v-html="name"></span> 
+			<!-- v-html 디렉티브는 html을 html 형태로만 렌더링 되도록 해준다. -->
+		</h1>
+	</div>
+	<script>
+		var app = new Vue({
+			el: '#app',
+			data: {
+				name: '<i>이탈릭</i>'
+			}
+		})
+	</script>
+</body>
+</html>

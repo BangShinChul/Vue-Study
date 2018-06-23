@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>v-text-directive study</title>
+	<script src="https://unpkg.com/vue"></script>
+</head>
+<body>
+	<div id="app">
+		<h1>Hello
+			<span v-text="name"></span> 
+			<!-- v-text 디렉티브는 html을 텍스트 형태로만 렌더링 되도록 해준다. 
+			이렇게 하는 이유는 태그를 막거나 XSS같은것을 차단하기 위해서이다. -->
+		</h1>
+	</div>
+	<script>
+		var app = new Vue({
+			el: '#app',
+			data: {
+				name: '<i>이탈릭</i>'
+			}
+		})
+	</script>
+</body>
+</html>

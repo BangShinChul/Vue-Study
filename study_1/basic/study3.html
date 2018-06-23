@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Study3</title>
+	<script src="https://unpkg.com/vue"></script>
+</head>
+<body>
+<div id="app">
+	<ul>
+		<li v-for="product in products"> <!-- v-for Vue directive for iteration -->
+			{{product}} <!-- Create an <li> for each product -->
+		</li>
+	</ul>
+</div>	
+<script>
+	const app = new Vue({
+		el: '#app',
+		data: {
+			products: [] // Start with an empty array
+		},
+		created(){ // Run this code after Vue instance is created
+			fetch('https://api.myjson.com/bins/74l63')
+				.then(response => response.json())
+				.then(json => {
+					this.products = json.products // Set the products array value
+				})
+		}
+	})
+</script>
+<!-- 
+1. 브라우저 url 창에 https://api.myjson.com/bins/74l63 를 넣어 접속해보세요.
+2. 해당 html 파일을 크롬으로 실행해보세요.
+ -->
+</body>
+</html>

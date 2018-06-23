@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Study8</title>
+	<script src="https://unpkg.com/vue"></script>
+</head>
+<body>
+<div id="app">
+	<ul>
+		<li v-for="product in products">  
+			<input type="number" v-model.number="product.quantity"> <!-- Bind this input field to the product's quantity -->
+			{{product.name}}
+			<span v-if="product.quantity === 0"> 
+				- OUT OF STOCK 
+			</span>
+		</li>
+	</ul>
+	<h2>Total Inventory: {{totalProducts}}</h2> <!-- Print the inventory -->
+</div>	
+<script>
+	const app = new Vue({
+		el: '#app',
+		data: {
+			products: [] // Start with an empty array
+		},
+		computed: {
+			totalProducts(){
+				return this.products.reduce((sum, product) => {
+					return sum + product.quantity // Add together all product quantities and return sum
+				}, 0)
+			}
+		},
+		created(){ // Run this code after Vue instance is created
+			fetch('https://api.myjson.com/bins/74l63')
+				.then(response => response.json())
+				.then(json => {
+					this.products = json.products // Set the products array value
+				})
+		}
+	})
+</script>
+<!-- 
+1. 해당 html 파일을 크롬으로 실행해보세요.
+2. input field의 값을 변경해보세요.
+ -->
+</body>
+</html>
