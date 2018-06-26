@@ -1,9 +1,9 @@
 # BSC's Vue.js Study
-VueÀÇ ±âº» ¹®¹ýºÎÅÍ °£´ÜÇÑ ¾Û ¸¸µé±â ±îÁö ½ºÅÍµð ½ÃÀÛÇÕ´Ï´Ù.<br>
-±âº»ÀûÀÎ ºÎºÐºÎÅÍ °øºÎÇÏ¸ç push ÇÏµµ·Ï ÇÏ°Ú½À´Ï´Ù.
+Vueì˜ ê¸°ë³¸ ë¬¸ë²•ë¶€í„° ê°„ë‹¨í•œ ì•± ë§Œë“¤ê¸° ê¹Œì§€ ìŠ¤í„°ë”” ì‹œìž‘í•©ë‹ˆë‹¤.<br>
+ê¸°ë³¸ì ì¸ ë¶€ë¶„ë¶€í„° ê³µë¶€í•˜ë©° push í•˜ë„ë¡ í•˜ê² ìŠµë‹ˆë‹¤.
 ---
 ### 18.16.13<br>
-1. ±âº»¹®¹ý °øºÎ(ing) - study_1
-2. °£´ÜÇÑ TODO¾Û ¸¸µé±â(ing) - study_2
+1. ê¸°ë³¸ë¬¸ë²• ê³µë¶€(ing) - study_1
+2. ê°„ë‹¨í•œ TODOì•± ë§Œë“¤ê¸°(ing) - study_2
 <br>
-°¢°¢ÀÇ µð·ºÅÍ¸® ¾È¿¡ README.mdÀÌ ÀÖÀ¸´Ï Âü°í¹Ù¶ø´Ï´Ù.
+ê°ê°ì˜ ë””ë ‰í„°ë¦¬ ì•ˆì— README.mdê°€ ìžˆìœ¼ë‹ˆ ì°¸ê³  ë°”ëžë‹ˆë‹¤.
