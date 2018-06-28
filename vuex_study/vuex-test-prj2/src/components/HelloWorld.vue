@@ -3,13 +3,13 @@
     <h1>{{ msg }}</h1>
 
     <div id="test-section-1">
-      <p class="test-txt">{{ txt_1 }}</p>
+      <p class="test-txt">This offsetTop : {{ txt_1 }}</p>
     </div>
     <div id="test-section-2">
-      <p class="test-txt">{{ txt_2 }}</p>
+      <p class="test-txt">This offsetTop : {{ txt_2 }}</p>
     </div>
     <div id="test-section-3">
-      <p class="test-txt">{{ txt_3 }}</p>
+      <p class="test-txt">This offsetTop : {{ txt_3 }}</p>
     </div>
   </div>
 </template>

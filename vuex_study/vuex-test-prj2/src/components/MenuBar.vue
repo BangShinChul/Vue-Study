@@ -5,7 +5,7 @@
 			<a class="menu-item" v-on:click="moveToSec1">section 1</a>
 			<a class="menu-item" v-on:click="moveToSec2">section 2</a>
 			<a class="menu-item" v-on:click="moveToSec3">section 3</a>
-			<a class="menu-item" v-on:click="load">load</a>	
+			<a class="menu-item" v-on:click="reset">reset</a>	
 		</div>
 	</div>
 </template>
@@ -44,11 +44,11 @@
 			moveToSec3(){
 				window.scrollTo(0, Number(this.section3)-80);
 			},
-			load(){
+			reset(){
+				window.scrollTo(0,0);
 				this.$store.state.oneTop = document.getElementById('test-section-1').offsetTop;
 				this.$store.state.twoTop = document.getElementById('test-section-2').offsetTop;
 				this.$store.state.threeTop = document.getElementById('test-section-3').offsetTop;
-				alert("load");
 			}
 		}
 	}

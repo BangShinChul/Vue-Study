@@ -28,4 +28,5 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
 
 ---
 
-vuex 사용 시 store.js 따로 만들지않고 main.js에서 vuex 세팅해서 사용해보는 테스트 
+vuex 사용 시 store.js 따로 만들지않고 main.js에서 vuex 세팅해서 사용해보는 테스트 <br>
+그리고 메뉴바 하단에 맞춰 스크롤 하는 동작 구현
