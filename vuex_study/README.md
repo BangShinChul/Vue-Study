@@ -44,7 +44,7 @@ new Vue({
 실제로 Vuex를 사용해봅시다. <br>
 
 1. <code>npm install -g vue-cli</code>
-2. <code>vue init vuex-test-prj/webpack vuex-test-prj</code>
+2. <code>vue init webpack vuex-test-prj</code>
 3. <code>cd vuex-test-prj</code>
 4. <code>npm install vuex --save</code>
 5. <code>npm install</code>

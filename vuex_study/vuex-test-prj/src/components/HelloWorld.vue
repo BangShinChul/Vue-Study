@@ -2,9 +2,12 @@
   <div class="hello">
     <h1>{{ msg }}</h1>
     <h1>{{ cnt }}</h1>
+    
     Parent counter : {{ this.$store.state.counter }}
     <button v-on:click="addCounter()">+</button>
     <button v-on:click="subCounter()">-</button>
+    <button v-on:click="tstCounter()">test</button>
+    
     
     <h2>Essential Links</h2>
   </div>
@@ -12,6 +15,7 @@
 
 <script>
 import Test from './Test.vue'
+import {store} from '../store/store.js'
 
 export default {
   name: 'HelloWorld',
@@ -21,17 +25,23 @@ export default {
   data () {
     return {
       msg: 'Welcome to Your Vue.js App',
-      cnt: this.$store.state.count
+      cnt: this.$store.state.count,
+      tst: 0
     }
   },
   methods : {
     addCounter() {
-      this.$store.state.count++;
-      cnt = this.$store.state.count;
+      this.$store.state.count++
+      this.cnt = this.$store.state.count
     },
     subCounter(){
-      this.$store.state.count--;
-      cnt = this.$store.state.count;
+      this.$store.state.count--
+      this.cnt = this.$store.state.count
+    },
+    tstCounter(){
+      this.$store.commit('subment')
+      this.cnt = this.$store.state.count
+      // this.$store.increment
     }
   }
 }
